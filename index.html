@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blox Fruits Beginner's Guide: Best Codes for Fast Leveling & Boosts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff6b35;
+            --secondary: #004e89;
+            --accent: #f7c59f;
+            --dark: #1a1a2e;
+            --light: #f8f7f2;
+            --success: #2a9d8f;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            background-image: url('https://i.imgur.com/JVQ0QYt.png');
+            background-attachment: fixed;
+            background-size: cover;
+            background-blend-mode: overlay;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(248, 247, 242, 0.92);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            border: 3px solid var(--secondary);
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--success), var(--primary));
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--secondary);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            right: 25%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+            margin-top: 40px;
+            transition: all 0.3s ease;
+            font-weight: 700;
+        }
+        
+        h2:hover {
+            transform: translateX(10px);
+            color: var(--primary);
+        }
+        
+        h3 {
+            font-size: 1.8rem;
+            color: var(--success);
+            margin-top: 25px;
+            font-weight: 600;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+        
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        a::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        a:hover::after {
+            width: 100%;
+        }
+        
+        ul, ol {
+            margin-bottom: 25px;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            position: relative;
+            font-weight: 500;
+        }
+        
+        ul li::before {
+            content: "⚔️";
+            position: absolute;
+            left: -25px;
+        }
+        
+        ol {
+            counter-reset: item;
+        }
+        
+        ol li {
+            counter-increment: item;
+        }
+        
+        ol li::before {
+            content: counter(item) ".";
+            font-weight: bold;
+            color: var(--primary);
+            position: absolute;
+            left: -25px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        table:hover {
+            transform: translateY(-5px);
+        }
+        
+        th {
+            background-color: var(--secondary);
+            color: white;
+            font-weight: 600;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            font-weight: 500;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgba(0, 78, 137, 0.05);
+        }
+        
+        tr:hover {
+            background-color: rgba(255, 107, 53, 0.1);
+        }
+        
+        .code-cell {
+            font-family: 'Poppins', monospace;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .reward-cell {
+            color: var(--success);
+            font-weight: 600;
+        }
+        
+        .pro-tip {
+            background-color: rgba(247, 197, 159, 0.3);
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+            position: relative;
+            font-weight: 500;
+        }
+        
+        .pro-tip::before {
+            content: "💡 Pro Tip";
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        
+        /* Treasure chest animation */
+        .treasure {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-image: url('https://i.imgur.com/5zQJZQy.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            z-index: 100;
+            animation: bounce 2s infinite;
+            filter: drop-shadow(0 0 5px gold);
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--light);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blox Fruits Beginner's Guide: Best Codes for Fast Leveling & Boosts</h1>
+
+        <p>
+            <span style="font-size: 1.2em; font-weight: 700; color: var(--primary);">Blox Fruits</span>, one of Roblox's most popular games, draws inspiration from the One Piece anime and plunges players into a vast world of pirate adventures, fruit-based powers, and intense combat. If you're just getting started, you're probably looking for ways to level up fast and get ahead. The good news? Redeemable in-game 
+            <a href="https://bloxfruitscodes.ph/" target="_blank"><strong>Blox fruits codes</strong></a> 
+            offer exactly that—valuable boosts to speed up your progress.
+        </p>
+
+        <h2>Understanding Blox Fruits Gameplay: Why Boosts Matter</h2>
+        <ul>
+            <li><strong>Double XP:</strong> Speeds up leveling dramatically.</li>
+            <li><strong>Stat Resets:</strong> Allows new players to fix early mistakes in attribute allocation.</li>
+            <li><strong>In-Game Currency:</strong> Helps with buying weapons, fruits, and ships.</li>
+        </ul>
+        <p>Early in the game, leveling up is your primary goal, and codes give you a major leg up.</p>
+
+        <h2>How to Redeem Blox Fruits Codes</h2>
+        <ol>
+            <li>Open Blox Fruits in Roblox.</li>
+            <li>Click the Twitter (bird) icon on the left side of the screen.</li>
+            <li>Enter your code into the pop-up window.</li>
+            <li>Hit <strong>Try</strong> to redeem.</li>
+        </ol>
+        <p><em>Note:</em> Codes are case-sensitive and may expire, so act quickly.</p>
+
+        <h2>Best Active Blox Fruits Codes for Beginners (May 2025)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Reward</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="code-cell">REWARDFUN</td><td class="reward-cell">20 mins of 2x XP</td><td>XP Boost</td></tr>
+                <tr><td class="code-cell">NEWTROLL</td><td class="reward-cell">20 mins of 2x XP</td><td>XP Boost</td></tr>
+                <tr><td class="code-cell">SECRET_ADMIN</td><td class="reward-cell">Stat Reset</td><td>Utility</td></tr>
+                <tr><td class="code-cell">AXIORE</td><td class="reward-cell">20 mins of 2x XP</td><td>XP Boost</td></tr>
+                <tr><td class="code-cell">BIGNEWS</td><td class="reward-cell">Title (cosmetic)</td><td>Fun</td></tr>
+                <tr><td class="code-cell">FUDD10</td><td class="reward-cell">$1 Beli</td><td>Currency</td></tr>
+                <tr><td class="code-cell">STRAWHATMAINE</td><td class="reward-cell">15 mins of 2x XP</td><td>XP Boost</td></tr>
+                <tr><td class="code-cell">TANTAIGAMING</td><td class="reward-cell">15 mins of 2x XP</td><td>XP Boost</td></tr>
+                <tr><td class="code-cell">KITTGAMING</td><td class="reward-cell">20 mins of 2x XP</td><td>XP Boost</td></tr>
+                <tr><td class="code-cell">SUB2GAMERROBOT_EXP1</td><td class="reward-cell">30 mins of 2x XP</td><td>XP Boost</td></tr>
+            </tbody>
+        </table>
+        
+        <div class="pro-tip">
+            Start a grinding session right after redeeming XP codes to maximize your time.
+        </div>
+
+        <h2>Leveling Strategies for Beginners Using Boosts</h2>
+
+        <h3>1. Choose the Right Starter Weapon and Fruit</h3>
+        <p>Stick with swords like <strong>Katana</strong> or the <strong>Combat Style</strong> early on. If you get a Logia-type fruit (like Flame or Light), you'll become immune to some enemy attacks at higher levels—ideal for beginners.</p>
+
+        <h3>2. Follow the Island Progression Path</h3>
+        <p>Stick to the main questline from the <strong>Starter Island</strong> → <strong>Jungle</strong> → <strong>Pirate Village</strong>, etc. Quests give you the most XP when combined with a double XP boost.</p>
+
+        <h3>3. Grind in Short, Focused Bursts</h3>
+        <p>Use 15–30 minutes of XP boost for grinding 1–2 zones in a session. Focus on <strong>mob clusters</strong> near quest givers for efficiency.</p>
+
+        <h2>When to Use a Stat Reset Code</h2>
+        <p>Beginner mistakes in stat allocation can slow your progress. Here's when to reset:</p>
+        <ul>
+            <li>You've dumped too many points into a weapon or Blox Fruit you no longer use.</li>
+            <li>You're switching from melee to fruit-based combat (or vice versa).</li>
+            <li>You've learned about PvP/raiding builds and want to optimize.</li>
+        </ul>
+        <p>Stat reset codes are limited, so use them thoughtfully.</p>
+
+        <h2>Tips to Maximize Your Boosts</h2>
+        <ul>
+            <li><strong>Log out immediately</strong> after redeeming if you're not ready to grind; boost timers only tick down during active gameplay.</li>
+            <li><strong>Stack codes</strong> by using short-timer boosts first, then longer ones. For example, redeem a 15-minute boost, then a 30-minute one before grinding.</li>
+            <li><strong>Use private servers</strong> or quieter servers to avoid distractions or kill-stealing during your sessions.</li>
+        </ul>
+
+        <h2>Staying Updated: Where to Find New Codes</h2>
+        <p>Developers drop new codes during game updates, holidays, or YouTuber collaborations. Stay ahead by:</p>
+        <ul>
+            <li>Following developers on Twitter: @GamerRobot1 and @BloxFruits</li>
+            <li>Joining the official <strong>Blox Fruits Discord</strong></li>
+            <li>Checking reliable fan wikis and Roblox code sites</li>
+        </ul>
+        <p>Bookmark and check back often, as expired codes can disappear quickly.</p>
+
+        <h2>Final Thoughts: Boost Now, Master Later</h2>
+        <p>For beginners, using codes in Blox Fruits isn't cheating—it's smart strategy. Boosts allow you to accelerate the slowest part of the game and reach the fun, high-level content faster. Combine codes with smart leveling routes, strategic resets, and consistent grinding, and you'll outpace most casual players in no time.</p>
+        <p style="font-size: 1.2em; text-align: center; font-style: italic; color: var(--secondary); font-weight: 600;">So claim those boosts, set sail, and become the next pirate king!</p>
+    </div>
+
+    <div class="treasure" title="Yo ho ho! Happy gaming!"></div>
+
+    <script>
+        // Simple animation for the treasure chest
+        document.querySelector('.treasure').addEventListener('click', function() {
+            alert('Yo ho ho! May your pirate adventures be filled with rare fruits and epic battles!');
+        });
+    </script>
+</body>
+</html>
